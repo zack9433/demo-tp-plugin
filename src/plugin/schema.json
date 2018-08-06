@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsForThingsProUiPlugin",
+  "title": "ThingsPro UI Plugin Schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "default": "name",
+      "description": "Your ThingsPro UI plugin name."
+    },
+    "path": {
+      "type": "string",
+      "default": "libs",
+      "hide": true
+    },
+    "url": {
+      "type": "string",
+      "default": "",
+      "description": "Your REST API endpoint."
+    },
+    "resourceType": {
+      "type": "string",
+      "default": "model",
+      "alias": "rt",
+      "description": "Your resource type could be a object model or a collection. Default is model."
+    }
+  },
+  "required": ["name", "url"]
+}

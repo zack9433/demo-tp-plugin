@@ -1,0 +1,24 @@
+{
+  "name": "@tp-ui/schematics",
+  "version": "0.0.0",
+  "description": "ThingsPro App UI schematics",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && jasmine src/**/*_spec.js"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "devDependencies": {
+    "@angular-devkit/core": "^0.7.2",
+    "@angular-devkit/schematics": "^0.7.2",
+    "@schematics/angular": "^0.7.2",
+    "@types/jasmine": "^2.8.8",
+    "@types/node": "^10.5.6",
+    "jasmine": "^3.1.0",
+    "typescript": "~2.9.2"
+  }
+}

@@ -1,0 +1,16 @@
+<form [formGroup]="form"
+      (ngSubmit)="submit(model)">
+  <formly-form [form]="form"
+               [fields]="fields"
+               [model]="model">
+    <div fxLayout="row"
+         fxLayoutAlign="end center">
+      <button mat-raised-button
+              color="primary"
+              type="submit"
+              [disabled]="form.invalid">
+        {{'ui.common.save' | translate}}
+      </button>
+    </div>
+  </formly-form>
+</form>

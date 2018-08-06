@@ -1,0 +1,14 @@
+<tp-window [name]="windowTitle"
+           [windowId]="windowId">
+  <tp-window-state stateId="setting"
+                   name="{{'ui.common.window.setting' | translate}}"
+                   icon="settings">
+    <tp-dns-form [data]="data"></tp-dns-form>
+  </tp-window-state>
+  <tp-window-state stateId="refresh"
+                   name="{{'ui.common.window.refresh' | translate}}"
+                   type="ACTION"
+                   icon="refresh"
+                   (clickAction)="reload()">
+  </tp-window-state>
+</tp-window>

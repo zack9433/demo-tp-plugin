@@ -1,0 +1,10 @@
+<div fxLayout="row"
+     fxLayoutAlign="center center">
+  <div fxFlex="50%">
+    <tp-<%= dasherize(name) %>-window
+      [windowId]="windowId"
+      windowTitle="<%= capitalize(name) %>"
+      [data]="data$ | async" (refresh)="fetch()">
+    </tp-<%= dasherize(name) %>-window>
+  </div>
+</div>
