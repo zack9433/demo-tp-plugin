@@ -1,9 +1,11 @@
 {
-  "name": "@tp-ui/schematics",
+  "name": "tp-plugin",
   "version": "0.0.0",
   "description": "ThingsPro App UI schematics",
   "scripts": {
+    "start": "tsc -p tsconfig.json --watch",
     "build": "tsc -p tsconfig.json",
+    "prepublish": "npm run build",
     "test": "npm run build && jasmine src/**/*_spec.js"
   },
   "keywords": [
