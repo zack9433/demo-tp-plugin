@@ -23,7 +23,8 @@ function addTpPluginDependenciesToPackageJson() {
     addPackageToPackageJson(host, 'dependencies', '@ngrx/store', ngrxStoreVersion);
     addPackageToPackageJson(host, 'dependencies', '@ngrx/effects', ngrxStoreVersion);
     addPackageToPackageJson(host, 'dependencies', '@ngrx/entity', ngrxStoreVersion);
-    addPackageToPackageJson(host, 'dependencies', '@tp-ui/common', tpUiVersion);
+    addPackageToPackageJson(host, 'dependencies', '@tp-ui/tp-common', tpUiVersion);
+    addPackageToPackageJson(host, 'dependencies', '@tp-ui/tp-core', tpUiVersion);
     addPackageToPackageJson(host, 'dependencies', '@tp-ui/tp-window', tpUiVersion);
 
     context.addTask(new NodePackageInstallTask());
