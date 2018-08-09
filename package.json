@@ -1,6 +1,6 @@
 {
   "name": "tp-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ThingsPro App UI schematics",
   "scripts": {
     "start": "tsc -p tsconfig.json --watch",
