@@ -4,7 +4,6 @@ import { StoreModule } from '@ngrx/store';
 import { FormlyModule } from '@ngx-formly/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TpCommonModule } from '@tp-ui/tp-common';
-import { TpCommonWindowStateModule } from '@tp-ui/tp-common-window-state';
 import * as fromComponents from './components';
 import * as fromContainers from './containers';
 import { <%= camelize(name) %>Reducer, Tp<%= classify(name) %>Effects } from './store';
@@ -14,7 +13,6 @@ import { Tp<%= classify(name) %>RoutingModule } from './tp-<%= dasherize(name) %
   imports: [
     TranslateModule.forChild(),
     TpCommonModule,
-    TpCommonWindowStateModule,
     FormlyModule.forChild(),
     StoreModule.forFeature('<%= camelize(name) %>', <%= camelize(name) %>Reducer),
     EffectsModule.forFeature([Tp<%= classify(name) %>Effects]),
