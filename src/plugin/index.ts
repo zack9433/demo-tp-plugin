@@ -27,6 +27,7 @@ export default function(options: TpPluginOptions): Rule {
   const templateSource = apply(url('./files'), [
     template({
       ...stringUtils,
+      tmpl: '',
       ...options
     })
   ]);
